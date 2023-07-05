@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background: #080808;
+    color: #fff;
+}
+.h1{
+    text-align: center;
+    color: #080808;
+}
+input{
+    width: 100%;
+}
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+  }
+input[type=email] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+  }
+input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+  }
+.form{
+    background-color: #f2f2f2;
+    color: #080808;
+    padding: 50px 100px;
+    margin: 10px 10px;
+    display: inline-block;
+    border: 1px solid;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+#Sign{
+    background-color: #4caf50;
+    border: none;
+    padding: 15px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: poppins;
+    font-size: 18px;
+    font-weight: bold;
+}
+#Sign:hover {
+    background-color: #3d8b3d; /* New background color for hover state */
+    color: #fff; /* New text color for hover state */
+  }
+
+  /* Login Account */
+  /* *{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+  }
+  .h1{
+    text-align: center;
+    color: #000000;
+    font-size: 24px;
+    margin: 10px;
+  }
+  body{
+    box-sizing: border-box;
+    background-color: #000000;
+    color: #ffffff;
+  }
+input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+} */
