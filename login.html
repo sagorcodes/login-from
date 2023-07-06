@@ -1,41 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Login</title>
-  <style>
-    * {
-      padding: 0;
-      margin: 0;
-      font-family: 'poppins', sans-serif;
-      box-sizing: border-box;
-    }
-    body{
-      background-color: #080710;
-    }
-    form{
-      height: 350px;
-      width: 400px;
-      background-color: #ffffff;
-      position: absolute;
-      top: 20%;
-      left: 60%;
-      border-radius: 10px;
-      padding: 50px 35px;
-    }
-  
-  </style>
-</head>
-<body>
-  <form>
-    <h1 id="Login">Login Account</h1>
-    <p>Your Email</p>
-    <input type="email" placeholder="Entre Email" name="email" />
-    <p>Password</p>
-    <input type="password" placeholder="Entre Password" name="password" />
-    <input type="checkbox" value="lsRememberMe" id="rememberMe"> <label for="rememberMe">Remember me</label>
-    <input type="submit" value="Login" />
-  </form>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        font-family: "poppins", sans-serif;
+        box-sizing: border-box;
+      }
+      .back-video {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+        width: 100%;
+      }
+      form {
+        height: 350px;
+        width: 400px;
+        background-color: #ffffff;
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        transform: translateX(-50%);
+        border-radius: 10px;
+        padding: 50px 35px;
+      }
+      input[type="email"],
+      input[type="password"] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+      }
+      input[type="submit"] {
+        width: 30%;
+        background-color: #4caf50;
+        padding: 12px 20px;
+        margin: 8px 0;
+        border-radius: 3px;
+        transition: background-color 0.3s ease;
+      }
+      input[type="submit"]:hover {
+        background-color: #45a049;
+      }
+      .forgot-password {
+        text-align: center;
+        margin-top: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="hero">
+      <video autoplay loop muted playsinline class="back-video">
+        <source src="videos/background video.mp4" type="video/mp4" />
+        <!-- Add additional source elements for different video formats if needed -->
+      </video>
+      <form>
+        <h2>Login Account</h2>
+        <p>Your Email</p>
+        <input type="email" placeholder="Enter Email" name="email" />
+        <p>Password</p>
+        <input type="password" placeholder="Enter Password" name="password" />
+        <input type="checkbox" value="lsRememberMe" id="rememberMe" />
+        <label for="rememberMe">Remember me</label>
+        <input type="submit" value="Login" />
+        <div class="forgot-password">
+          <a href="#">Forgot Password?</a>
+        </div>
+      </form>
+    </div>
+  </body>
 </html>
